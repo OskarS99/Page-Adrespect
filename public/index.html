@@ -5,8 +5,252 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="./index.js"></script>
+  
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="">
+      <nav class="flex justify-between items-center py-4 px-16 ">
+        <h1><span class="font-bold">giard</span>design</h1>
+        <div>
+          <ul class="flex gap-12 items-start ">
+
+
+
+            <div class="">
+              <button  id="button">
+              Oferta
+              <img src="./images/slideIcon.svg" alt="slideIcon" class="inline"/>
+             </button>
+              <ul id="list" class=" bg-white hidden absolute rounded-md z-10 mt-2 p-2">
+                  <li class="py-1 border-b border-gray-800 ">
+                    <a href="">Złóż oferte</a>
+                  </li>
+                  <li class="py-1 border-b border-gray-800">
+                    <a href="">Rodzaje aranzacji</a>
+                  </li>
+              </ul>
+            </div>
+             
+
+
+
+
+
+
+
+
+            <li>
+              <a href="#">O firmie</a>
+            </li>
+            <li>
+              <a href="#">Realizacje</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+            <li>
+              <input type="text" placeholder="Wyszukaj" class="p-1 w-0 transition-all duration-150 none" id="searchBar"/>
+              <img src="./images/search.svg" alt="search" class="inline cursor-pointer ml-2" id="search" />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+   
+
+
+<section id="intro">
+      <div class=" bg-beige relative flex  justify-between items-center">
+        <div class="ml-20 ">
+          <h1 class="text-6xl">Nowoczesna</br>aranżacja</br>Twojego ogrodu</h1>
+          <p class="mt-12 text-sm">
+            Marka GiardDesign to wieloletnie doświadczenie i wysoka</br> estetyka
+            realizacji. Oferujemy kompleksowy zakres usług</br> z indywidualnym
+            podejściem do każdego projektu.
+          </p>
+          <div class="mt-16">
+            <a class="button bg-green-900 text-[#F5F0EC]">Skontaktuj się z nami</a>
+            <a class="button ml-6 text-green-900 border border-green-900">Zobacz nasze realizacje</a>
+          </div>
+        </div>
+
+        
+
+
+         
+            <div id="images" class=" " >
+              <img src="./images/introo.png" alt="garden1"/>
+              <img src="./images/garden2.jpg" alt="garden2" class=" hidden"/>
+              <img src="./images/garden3.jpg" alt="garden3" class="hidden "/>
+            </div>
+       
+
+
+          
+          
+           <div class="absolute right-0 bottom-0 flex overflow-x-auto">
+            
+              <button id="previous"  class="px-6 py-6 bg-[#F5F0EC] border-none"><img src="./images/arrowLeft.svg" alt="arrow"/></button>
+              <button id="next" class="px-6 py-6 bg-[#F5F0EC] border-none"><img src="./images/arrowRight.svg" alt="arrow"/></button>
+           </div>
+        </div>
+    </section>
+
+
+
+    
+    
+    
+    
+    
+    <section class="bg-[#F5F0EC]" id="oferta">
+    <div class="pt-32 px-40">
+        <span class="text-green-900 text-xs ">Oferta</span>
+        <h1 class="text-5xl mt-6 tracking">Działamy kompleksowo</h1>
+        <p class="text-sm mt-10">
+          Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody</br> 
+          przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy</br> 
+          w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. 
+        </p>
+      </div>
+      <div class="flex justify-evenly py-20">
+        <div class="h-[370px] w-[378px] p-11 rounded-3xl bg-white transform transition duration-150 hover:shadow-2xl ">
+           <img src="./images/pencil.svg" alt="pencil"/>
+           <h2 class="mt-6 text-3xl">Projekty</h2>
+           <p class="mt-3 text-sm">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+           <a href="" class="inline-block text-green-900  border-b border-green-900 pb-1 mt-20 object-contain  hover:text-lg hover:font-bold" >Dowiedz się wiecej <img src="./images/arrowRightv2.svg" alt="arrow" class="  hover:bg-black inline ml-1"/></a>
+        </div>
+        <div class="h-[370px] w-[378px] p-11 rounded-3xl bg-white  hover:shadow-2xl">
+          <img src="./images/eye.svg" alt="eye"/>
+          <h2 class="mt-6 text-3xl">Wizualizacje</h2>
+          <p class="mt-3 text-sm">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+          <a href="" class="inline-block text-green-900  border-b border-green-900 pb-1 mt-20 object-contain  hover:text-lg  hover:font-bold">Dowiedz się wiecej <img src="./images/arrowRightv2.svg" alt="arrow" class="inline ml-1"/></a>
+        </div>
+        <div class="h-[370px] w-[378px] p-11 rounded-3xl bg-white    hover:shadow-2xl">
+          <img src="./images/sparks.svg" alt="sparks"/>
+          <h2 class="mt-6 text-3xl">Realizacje</h2>
+          <p class="mt-3 text-sm">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+          <a href="" class="inline-block text-green-900  border-b border-green-900 pb-1 mt-20 object-contain hover:text-lg  hover:font-bold">Zobacz nasze realizacje <img src="./images/arrowRightv2.svg" alt="arrow" class="inline ml-1"/></a>
+        </div>
+      </div>
+   </section>
+
+    <section class="bg-[#1B5B31]" id="O firmie">
+     <div class="flex flex-row-reverse items-center justify-between">
+      <div class="mr-20">
+        <span class="text-white text-xs">O firmie</span>
+        <h1 class=" text-white text-5xl mt-6">Tworzymy</br> z pasją</h1>
+        <p class="text-sm text-white mt-10">
+          Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą</br>
+          wykwalifikowani projektanci oraz architekci, których zadaniem jest</br>
+          rozpoznanie i realizacja potrzeb każdego Klienta. Nasza </br>
+          specjalizacja to przestrzenie nowoczesne, które charakteryzuje </br>
+          minimalizm, geometria i elegancka prostota. Tworzymy ogrody</br> 
+          małoobsługowe, dostosowane do współczesnego trybu życia.
+        </p>
+        <a href="" class="button inline-block text-white border border-white mt-16"> Poznaj nas bliżej <img src="./images/arrowRight.svg" alt="arrrow" class="inline ml-1 fill-black" /></a>
+      </div>
+<img src="./images/aboutFirm.png" alt="aboutFirm"/>
+     </div> 
+  </section>
+
+
+
+
+  
+    <section class="bg-beige" id="realizacje">
+<div class="pt-20 px-32">
+  <span class="text-green-900 text-xs">
+    Realizacje
+  </span>
+  <h1 class="text-5xl mt-5">Nasze projekty</h1>
+</div>
+
+
+
+<div class="mt-20 relative">
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="gutter-sizer"></div>
+     <div class="grid-item"><img src="./images/projects/Photo1.png" alt="image1"/></div>
+     <div class="grid-item"><img src="./images/projects/Photo2.png" alt="image2"/></div>
+     <div class="grid-item"><img src="./images/projects/Photo3.png" alt="image3"/></div>
+     <div class="grid-item"><img src="./images/projects/Photo4.png" alt="image4"/></div>
+     <div class="grid-item"><img src="./images/projects/Photo5.png" alt="image5"/></div>
+     <div class="grid-item"><img src="./images/projects/Photo6.png" alt="image6"/></div>
+     <div class="grid-item"><img src="./images/projects/Photo7.png" alt="image7"/></div>
+     <div class="grid-item"><img src="./images/projects/Photo8.png" alt="image8"/></div>
+     <div class="grid-item"><img src="./images/projects/Photo9.png" alt="image9"/></div>
+     
+  </div>
+<button class="button absolute border block border-black text-center bottom-20 left-1/2">Rozwiń <img src="./images/arrowDown.svg" alt="arrow" class="inline ml-1"/></button>
+  
+</div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="Kontakt">
+      <div class="bg-green-900 my-12 mx-40 h-[356px] flex gap-14 justify-evenly items-center">
+        <h1 class="text-4xl text-white mt-5">
+  Zostańmy w kontacie!</br>
+  Znajdziesz nas na Instagramie.
+</h1>
+         <div>
+          <p class="text-sm text-white mb-6">Śledź nasze</br> najnowsze realizacje!</p>
+          <a href="" class="button bg-white text-green-900">Instagram</a>
+         </div>
+        </div>
+        <div class="bg-black px-40 py-16 flex flex-col gap-14">
+             <div class="flex justify-between">
+                <h1 class="text-white"><span class="font-bold">giard</span>design</h1>
+                <div>
+                  <p class="text-sm inline text-white mb-6">Daj znać, co mozemy dla Ciebie zrobić!</p>
+                  <a href="" class="button bg-green-900 text-white ml-5">Skontaktuj się z nami</a>
+                </div>
+             </div>
+
+             <div class="bg-white h-[1px] opacity-50"></div>
+
+             <div class="flex justify-between">
+               <div class="flex gap-10">
+                   <p class="text-white text-sm">Kontakt</p>
+                   <p class="text-white text-sm">Instagram</p>
+                   <p class="text-white text-sm">Facebook</p>
+                   <p class="text-white text-sm">LinkedIn</p>
+               </div>
+               <div class="flex gap-10">
+                 <p class="text-white text-sm">000-000-000</p>
+                 <p class="text-white text-sm">giarddesign@kontakt.pl</p>
+               </div>
+             </div>
+
+             <div class="flex justify-between mt-24">
+                 <p class="text-white">Prawa zastrzeżone © 2022</p>
+                 <div class="flex gap-4">
+                   <p class="text-white">made by</p>
+                   <img src="./images/logo_adRespect.svg" alt="adRespect"/>                  
+                 </div>
+             </div>
+        </div>
+
+    </footer>
+   
   </body>
 </html>
