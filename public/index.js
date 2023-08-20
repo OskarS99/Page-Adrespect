@@ -5,6 +5,7 @@ window.onload = () => {
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
     gutter: '.gutter-sizer',
+    percentPosition: true,
   });
 };
 
@@ -63,3 +64,17 @@ previous.addEventListener('click', () => {
   }
   images[currentIndex].classList.remove('hidden');
 });
+
+//popup image
+
+const photos = document.querySelectorAll('.grid-item');
+const popup = document.querySelector('.popup-image');
+photos.forEach((photo) => {
+  photo.onclick = () => {
+    popup.classList.remove('hidden');
+    document.querySelector('.popup-image img').src = photo.getAttribute('src');
+  };
+});
+popup.onclick = () => {
+  document.querySelector('.popup-image').classList.add('hidden');
+};

@@ -6,7 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <script defer src="./index.js"></script>
-  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
   </head>
   <body>
     <div class="">
@@ -31,15 +33,6 @@
                   </li>
               </ul>
             </div>
-             
-
-
-
-
-
-
-
-
             <li>
               <a href="#">O firmie</a>
             </li>
@@ -80,7 +73,7 @@
 
          
             <div id="images" class=" " >
-              <img src="./images/introo.png" alt="garden1"/>
+              <img src="./images/introo.png" alt="garden1 " class=""/>
               <img src="./images/garden2.jpg" alt="garden2" class=" hidden"/>
               <img src="./images/garden3.jpg" alt="garden3" class="hidden "/>
             </div>
@@ -96,14 +89,140 @@
            </div>
         </div>
     </section>
+    
+    
+    
+    
 
 
 
+
+   
+
+      <div id="default-carousel" class="relative" data-carousel="static">
+         
+            <div class="overflow-hidden relative h-[737px]">
+               
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <div class=" bg-beige relative flex  justify-between items-center">
+                    <div class="ml-20 ">
+                      <h1 class="text-6xl">Nowoczesna</br>aranżacja</br>Twojego ogrodu</h1>
+                      <p class="mt-12 text-sm">
+                        Marka GiardDesign to wieloletnie doświadczenie i wysoka</br> estetyka
+                        realizacji. Oferujemy kompleksowy zakres usług</br> z indywidualnym
+                        podejściem do każdego projektu.
+                      </p>
+                      <div class="mt-16">
+                        <a class="button bg-green-900 text-[#F5F0EC]">Skontaktuj się z nami</a>
+                        <a class="button ml-6 text-green-900 border border-green-900">Zobacz nasze realizacje</a>
+                      </div>
+                    </div>
+                        <div id="images" class=" " >
+                          <img src="./images/introo.png" alt="garden1 " class=""/>
+                        </div>
+                   </div> 
+                </div>
+               
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <div class=" bg-beige relative flex  justify-between items-center">
+                    <div class="ml-20 ">
+                      <h1 class="text-6xl">Nowoczesna</br>aranżacja</br>Twojego ogrodu</h1>
+                      <p class="mt-12 text-sm">
+                        Marka GiardDesign to wieloletnie doświadczenie i wysoka</br> estetyka
+                        realizacji. Oferujemy kompleksowy zakres usług</br> z indywidualnym
+                        podejściem do każdego projektu.
+                      </p>
+                      <div class="mt-16">
+                        <a class="button bg-green-900 text-[#F5F0EC]">Skontaktuj się z nami</a>
+                        <a class="button ml-6 text-green-900 border border-green-900">Zobacz nasze realizacje</a>
+                      </div>
+                    </div>
+                        <div id="images" class=" " >
+                          <img src="./images/garden2.jpg" alt="garden2"/>
+                        </div>
+                   </div> 
+                </div>
+               
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <div class=" bg-beige relative flex  justify-between items-center">
+                    <div class="ml-20 ">
+                      <h1 class="text-6xl">Nowoczesna</br>aranżacja</br>Twojego ogrodu</h1>
+                      <p class="mt-12 text-sm">
+                        Marka GiardDesign to wieloletnie doświadczenie i wysoka</br> estetyka
+                        realizacji. Oferujemy kompleksowy zakres usług</br> z indywidualnym
+                        podejściem do każdego projektu.
+                      </p>
+                      <div class="mt-16">
+                        <a class="button bg-green-900 text-[#F5F0EC]">Skontaktuj się z nami</a>
+                        <a class="button ml-6 text-green-900 border border-green-900">Zobacz nasze realizacje</a>
+                      </div>
+                    </div>
+                        <div id="images" class=" " >
+                          <img src="./images/garden3.jpg" alt="garden3"/>
+                        </div>
+                   </div> 
+                </div>
+            </div>
+            
+            
+          
+           <div class=" absolute right-0 bottom-0 flex z-20 " >
+            <button type="button" class="px-6 py-6 bg-[#F5F0EC]" data-carousel-prev>
+              <img src="./images/arrowLeft.svg" alt="arrow"/>
+            </button>
+            <button type="button" class="px-6 py-6 bg-[#F5F0EC]" data-carousel-next>
+              <img src="./images/arrowRight.svg" alt="arrow"/>
+            </button>
+           </div>
+            
+        </div>
     
-    
-    
-    
-    
+      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="bg-[#F5F0EC]" id="oferta">
     <div class="pt-32 px-40">
         <span class="text-green-900 text-xs ">Oferta</span>
@@ -149,7 +268,7 @@
           minimalizm, geometria i elegancka prostota. Tworzymy ogrody</br> 
           małoobsługowe, dostosowane do współczesnego trybu życia.
         </p>
-        <a href="" class="button inline-block text-white border border-white mt-16"> Poznaj nas bliżej <img src="./images/arrowRight.svg" alt="arrrow" class="inline ml-1 fill-black" /></a>
+        <a href="" class="button inline-block text-white border border-white mt-16"> Poznaj nas bliżej <img src="./images/arrowRightv2.svg" alt="arrrow" class="inline ml-1 fill-black" /></a>
       </div>
 <img src="./images/aboutFirm.png" alt="aboutFirm"/>
      </div> 
@@ -170,23 +289,27 @@
 
 
 <div class="mt-20 relative">
-  <div class="grid">
-    <div class="grid-sizer"></div>
-    <div class="gutter-sizer"></div>
-     <div class="grid-item"><img src="./images/projects/Photo1.png" alt="image1"/></div>
-     <div class="grid-item"><img src="./images/projects/Photo2.png" alt="image2"/></div>
-     <div class="grid-item"><img src="./images/projects/Photo3.png" alt="image3"/></div>
-     <div class="grid-item"><img src="./images/projects/Photo4.png" alt="image4"/></div>
-     <div class="grid-item"><img src="./images/projects/Photo5.png" alt="image5"/></div>
-     <div class="grid-item"><img src="./images/projects/Photo6.png" alt="image6"/></div>
-     <div class="grid-item"><img src="./images/projects/Photo7.png" alt="image7"/></div>
-     <div class="grid-item"><img src="./images/projects/Photo8.png" alt="image8"/></div>
-     <div class="grid-item"><img src="./images/projects/Photo9.png" alt="image9"/></div>
-     
+  <div class=" image-container grid ">
+    <div class="grid-sizer w-[100%] sm:w-[45%] lg:w-[28%] xl:w-[19%]" ></div>
+    <div class="gutter-sizer w-0 sm:w-[10%] lg:w-[8%] xl:w-[8%]"></div>
+     <img src="./images/projects/Photo1.png" alt="image1" class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[28%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1] cursor-pointer"/>
+     <img src="./images/projects/Photo2.png" alt="image2" class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[28%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]"/>
+     <img src="./images/projects/Photo3.png" alt="image3" class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[28%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]"/>
+     <img src="./images/projects/Photo4.png" alt="image4" class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[28%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]"/>
+     <img src="./images/projects/Photo5.png" alt="image5" class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[28%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]"/>
+     <img src="./images/projects/Photo6.png" alt="image6" class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[28%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]"/>
+     <img src="./images/projects/Photo7.png" alt="image7" class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[28%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]"/>
+     <img src="./images/projects/Photo8.png" alt="image8" class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[28%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]"/>
+     <img src="./images/projects/Photo9.png" alt="image9" class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[28%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]"/>
+    </div>
+
+    <div class="popup-image hidden fixed bg-black bg-opacity-75 top-0 left-0 h-full w-full z-[100] ">
+        <img src="./images/projects/Photo1.png" alt="image1" class="absolute left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[-50%] scale-[1.4]"/>
+    </div>
+    <div class="absolute bottom-0 h-[800px] w-full bg-gradient-to-t from-[#DCC1AB]"></div>
+    <button class="button absolute border block border-black text-center bottom-20 left-1/2 z-10 transition transform duration-200 ease-linear hover:scale-[1.2]">Rozwiń <img src="./images/arrowDown.svg" alt="arrow" class="inline ml-1"/></button>
+    
   </div>
-<button class="button absolute border block border-black text-center bottom-20 left-1/2">Rozwiń <img src="./images/arrowDown.svg" alt="arrow" class="inline ml-1"/></button>
-  
-</div>
     </section>
 
 
@@ -251,6 +374,6 @@
         </div>
 
     </footer>
-   
+    
   </body>
 </html>
