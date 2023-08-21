@@ -37,34 +37,6 @@ button.addEventListener('click', () => {
   }
 });
 
-//Slider section
-
-const next = document.querySelector('#next');
-const previous = document.querySelector('#previous');
-const images = document.querySelector('#images').children;
-const totalImages = images.length;
-let currentIndex = 0;
-
-next.addEventListener('click', () => {
-  images[currentIndex].classList.add('hidden');
-  if (currentIndex === totalImages - 1) {
-    currentIndex = 0;
-  } else {
-    currentIndex++;
-  }
-  images[currentIndex].classList.remove('hidden');
-});
-
-previous.addEventListener('click', () => {
-  images[currentIndex].classList.add('hidden');
-  if (currentIndex === 0) {
-    currentIndex = totalImages - 1;
-  } else {
-    currentIndex--;
-  }
-  images[currentIndex].classList.remove('hidden');
-});
-
 //popup image
 
 const photos = document.querySelectorAll('.grid-item');
@@ -82,7 +54,7 @@ popup.onclick = () => {
 //more iamge
 
 const loadMore = document.querySelector('#load-more');
-const imgs = 9;
+const imgs = 18;
 const gradient = document.querySelector('.gradient');
 const buttonText = document.querySelector('.button-text');
 
@@ -91,8 +63,7 @@ loadMore.addEventListener('click', () => {
     ? 'Rozwiń'
     : 'Zwiń';
   let img = [...document.querySelectorAll('.grid-item')];
-  for (let i = 3; i <= imgs - 1; i++) {
+  for (let i = 9; i <= imgs - 1; i++) {
     img[i].classList.toggle('opacity-100');
   }
-  gradient.classList.toggle('opacity-0');
 });
