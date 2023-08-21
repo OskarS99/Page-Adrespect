@@ -1260,6 +1260,10 @@ input:checked + .toggle-bg {
   height: 100%;
 }
 
+.h-\[1000px\] {
+  height: 1000px;
+}
+
 .w-0 {
   width: 0px;
 }
