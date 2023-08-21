@@ -78,3 +78,21 @@ photos.forEach((photo) => {
 popup.onclick = () => {
   document.querySelector('.popup-image').classList.add('hidden');
 };
+
+//more iamge
+
+const loadMore = document.querySelector('#load-more');
+const imgs = 9;
+const gradient = document.querySelector('.gradient');
+const buttonText = document.querySelector('.button-text');
+
+loadMore.addEventListener('click', () => {
+  buttonText.innerHTML = gradient.classList.contains('opacity-0')
+    ? 'Rozwiń'
+    : 'Zwiń';
+  let img = [...document.querySelectorAll('.grid-item')];
+  for (let i = 3; i <= imgs - 1; i++) {
+    img[i].classList.toggle('opacity-100');
+  }
+  gradient.classList.toggle('opacity-0');
+});
