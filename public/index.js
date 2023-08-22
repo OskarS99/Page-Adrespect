@@ -9,19 +9,15 @@ window.onload = () => {
   });
 };
 
+//Searchbar
+
 const search = document.querySelector('#search');
 const serchBar = document.querySelector('#searchBar');
 
-//Searchbar
-
 search.addEventListener('click', () => {
-  if (serchBar.classList.contains('w-0')) {
-    searchBar.classList.add('w-40');
-    searchBar.classList.remove('w-0');
-  } else {
-    searchBar.classList.add('w-0');
-    searchBar.classList.remove('w-40');
-  }
+  searchBar.classList.toggle('w-0');
+  searchBar.classList.toggle('w-40');
+  searchBar.classList.toggle('invisible');
 });
 
 //Dropdown menu
@@ -30,17 +26,16 @@ const button = document.querySelector('#button');
 const slideList = document.querySelector('#list');
 
 button.addEventListener('click', () => {
-  if (slideList.classList.contains('hidden')) {
-    slideList.classList.remove('hidden');
-  } else {
-    slideList.classList.add('hidden');
-  }
+  slideList.classList.contains('hidden')
+    ? slideList.classList.remove('hidden')
+    : slideList.classList.add('hidden');
 });
 
 //popup image
 
 const photos = document.querySelectorAll('.grid-item');
 const popup = document.querySelector('.popup-image');
+
 photos.forEach((photo) => {
   photo.onclick = () => {
     popup.classList.remove('hidden');
@@ -54,16 +49,18 @@ popup.onclick = () => {
 //more iamge
 
 const loadMore = document.querySelector('#load-more');
-const imgs = 18;
+const imgs = 13;
 const gradient = document.querySelector('.gradient');
 const buttonText = document.querySelector('.button-text');
+const morePhotos = document.querySelector('.more-photos');
 
 loadMore.addEventListener('click', () => {
+  let img = [...document.querySelectorAll('.grid-item')];
+  for (let i = 9; i <= imgs - 1; i++) {
+    img[i].classList.toggle('opacity-0');
+  }
   buttonText.innerHTML = gradient.classList.contains('opacity-0')
     ? 'Rozwiń'
     : 'Zwiń';
-  let img = [...document.querySelectorAll('.grid-item')];
-  for (let i = 9; i <= imgs - 1; i++) {
-    img[i].classList.toggle('opacity-100');
-  }
+  gradient.classList.toggle('opacity-0');
 });
