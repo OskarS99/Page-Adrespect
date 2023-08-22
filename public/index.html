@@ -15,10 +15,10 @@
 
 <body>
   <nav>
-    <div class="flex flex-col gap-8 px-4 py-4 items-center lg:flex-row lg:justify-between  lg:py-4 lg:px-16 ">
-      <h1><span class="font-bold">giard</span>design</h1>
-      <ul class="flex sm:gap-8 lg:gap-12">
-        <li>
+    <div class="flex flex-col gap-8 px-2 py-4 items-center lg:flex-row lg:justify-between  lg:py-4 lg:px-16 ">
+      <h1 class="text-black"><span class="font-bold">giard</span>design</h1>
+      <ul class="flex gap-8 lg:gap-12">
+        <li class="text-black">
           <div>
             <button id="button">
               Oferta
@@ -43,7 +43,7 @@
         <li>
           <a href="#kontakt">Kontakt</a>
         </li>
-        <li>
+        <li class="absolute top-4 right-4 lg:static">
           <input type="text" placeholder="Wyszukaj"
             class="p-1 invisible border rounded-md  transition-all w-0 duration-150 ease-linear" id="searchBar" />
           <img src="./images/search.svg" alt="search" class="inline cursor-pointer ml-2" id="search" />
@@ -58,7 +58,7 @@
         <div
           class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
-          <div class="bg-beige flex flex-col gap-10 lg:items-center lg:flex-row lg:justify-between lg:gap-0">
+          <div class="bg-beige text-black flex flex-col gap-10 lg:items-center lg:flex-row lg:justify-between lg:gap-0">
             <div class=" mt-9 mx-auto">
               <h1 class="text-6xl">Nowoczesna</br>aranżacja</br>Twojego ogrodu</h1>
               <p class="mt-12 text-sm">
@@ -78,7 +78,7 @@
         <div
           class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item style="backface-visibility: hidden">
-          <div class=" bg-beige flex flex-col gap-10 items-center lg:flex-row lg:justify-between  lg:gap-0">
+          <div class=" bg-beige text-black flex flex-col gap-10 items-center lg:flex-row lg:justify-between  lg:gap-0">
             <div class="ml-20 sm:mt-9 sm:mx-auto ">
               <h1 class="text-6xl">Nowoczesna</br>aranżacja</br>Twojego ogrodu</h1>
               <p class="mt-12 text-sm">
@@ -98,7 +98,7 @@
         <div
           class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item style="backface-visibility: hidden">
-          <div class=" bg-beige flex flex-col gap-10 items-center lg:flex-row lg:justify-between lg:gap-0">
+          <div class=" bg-beige text-black flex flex-col gap-10 items-center lg:flex-row lg:justify-between lg:gap-0">
             <div class="ml-20 sm:mt-9 sm:mx-auto ">
               <h1 class="text-6xl">Nowoczesna</br>aranżacja</br>Twojego ogrodu</h1>
               <p class="mt-12 text-sm">
@@ -129,7 +129,7 @@
   </section>
 
   <section class="bg-[#F5F0EC]" id="oferta">
-    <div class="pt-16 pl-8 md:text-center lg:text-left lg:pt-32 lg:px-40 ">
+    <div class="pt-16 text-black pl-8 md:text-center lg:text-left lg:pt-32 lg:px-40 ">
       <span class="text-green-900 text-xs ">Oferta</span>
       <h1 class="text-5xl mt-6 tracking">Działamy kompleksowo</h1>
       <p class="text-sm mt-10">
@@ -138,7 +138,7 @@
         w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
       </p>
     </div>
-    <div class="flex flex-col gap-8 items-center py-8 lg:flex-row lg:justify-evenly lg:gap-4 lg:py-20">
+    <div class=" text-black  flex flex-col gap-8 items-center py-8 lg:flex-row lg:justify-evenly lg:gap-4 lg:py-20">
       <div class="h-[350px] w-[350px] p-11 rounded-3xl bg-white transform transition duration-150 hover:shadow-2xl ">
         <img src="./images/pencil.svg" alt="pencil" />
         <h2 class="mt-6 text-3xl">Projekty</h2>
@@ -211,53 +211,56 @@
     </div>
   </section>
 
-  <section class="bg-beige" id="realizacje">
-    <div class="pt-20 px-32">
-      <span class="text-green-900 text-xs">
-        Realizacje
-      </span>
-      <h1 class="text-5xl mt-5">Nasze projekty</h1>
+  <section id=" realizacje">
+    <div class="bg-beige text-black">
+      <div class=" pt-20 px-32">
+        <span class="text-green-900 text-xs">
+          Realizacje
+        </span>
+        <h1 class="text-5xl mt-5">Nasze projekty</h1>
+      </div>
+
+      <div class="grid mt-20 relative">
+        <div class="grid-sizer w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]"></div>
+        <div class="gutter-sizer w-0 sm:w-[10%] lg:w-[5%] xl:w-[8%]"></div>
+        <img src="./images/projects/Photo1.png" alt="image1"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1] cursor-pointer" />
+        <img src="./images/projects/Photo2.png" alt="image2"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]" />
+        <img src="./images/projects/Photo3.png" alt="image3"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]" />
+        <img src="./images/projects/Photo4.png" alt="image4"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
+        <img src="./images/projects/Photo5.png" alt="image5"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
+        <img src="./images/projects/Photo6.png" alt="image6"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
+        <img src="./images/projects/Photo7.png" alt="image7"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
+        <img src="./images/projects/Photo8.png" alt="image8"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
+        <img src="./images/projects/Photo9.png" alt="image9"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]" />
+        <img src="./images/projects/photo10.png" alt="image1"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 transition transform duration-200 ease-linear hover:scale-[1.1] " />
+        <img src="./images/projects/photo11.png" alt="image2"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 transition transform duration-200 ease-linear hover:scale-[1.1]" />
+        <img src="./images/projects/photo12.png" alt="image3"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 transition transform duration-200 ease-linear hover:scale-[1.1]" />
+        <img src="./images/projects/photo13.png" alt="image4"
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 transition transform duration-200 ease-linear hover:scale-[1.1]" />
+        <div class="popup-image hidden fixed bg-black bg-opacity-75 top-0 left-0 h-full w-full z-[100] ">
+          <img src="./images/projects/Photo1.png" alt="image1"
+            class="absolute left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[-50%] scale-[1.4]" />
+        </div>
+        <div class="gradient absolute bottom-0  w-full h-[1300px]  bg-gradient-to-t from-[#DCC1AB]"></div>
+        <button id="load-more"
+          class="button absolute border block border-black bottom-20 left-1/2 sm:translate-x-[-50%]  z-10 transition transform duration-200 ease-linear hover:scale-[1.2]"><span
+            class="button-text">Rozwiń</span><img src="./images/arrowDown.svg" alt="arrow" class="inline ml-1" />
+        </button>
+      </div>
     </div>
 
-    <div class="grid mt-20 relative">
-      <div class="grid-sizer w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]"></div>
-      <div class="gutter-sizer w-0 sm:w-[10%] lg:w-[5%] xl:w-[8%]"></div>
-      <img src="./images/projects/Photo1.png" alt="image1"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1] cursor-pointer" />
-      <img src="./images/projects/Photo2.png" alt="image2"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]" />
-      <img src="./images/projects/Photo3.png" alt="image3"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]" />
-      <img src="./images/projects/Photo4.png" alt="image4"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
-      <img src="./images/projects/Photo5.png" alt="image5"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
-      <img src="./images/projects/Photo6.png" alt="image6"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
-      <img src="./images/projects/Photo7.png" alt="image7"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
-      <img src="./images/projects/Photo8.png" alt="image8"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
-      <img src="./images/projects/Photo9.png" alt="image9"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]" />
-      <img src="./images/projects/photo10.png" alt="image1"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 transition transform duration-200 ease-linear hover:scale-[1.1] " />
-      <img src="./images/projects/photo11.png" alt="image2"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 transition transform duration-200 ease-linear hover:scale-[1.1]" />
-      <img src="./images/projects/photo12.png" alt="image3"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 transition transform duration-200 ease-linear hover:scale-[1.1]" />
-      <img src="./images/projects/photo13.png" alt="image4"
-        class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 transition transform duration-200 ease-linear hover:scale-[1.1]" />
-      <div class="popup-image hidden fixed bg-black bg-opacity-75 top-0 left-0 h-full w-full z-[100] ">
-        <img src="./images/projects/Photo1.png" alt="image1"
-          class="absolute left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[-50%] scale-[1.4]" />
-      </div>
-      <div class="gradient absolute bottom-0  w-full h-[1300px]  bg-gradient-to-t from-[#DCC1AB]"></div>
-      <button id="load-more"
-        class="button absolute border block border-black bottom-20 left-1/2 sm:translate-x-[-50%]  z-10 transition transform duration-200 ease-linear hover:scale-[1.2]"><span
-          class="button-text">Rozwiń</span><img src="./images/arrowDown.svg" alt="arrow" class="inline ml-1" />
-      </button>
-    </div>
   </section>
 
   <footer id="kontakt">
