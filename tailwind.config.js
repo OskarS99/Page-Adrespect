@@ -3,7 +3,8 @@ module.exports = {
   content: [
     './public/**/*.{html,js}',
     './src/**/*.{html,js}',
-    './node_modules/flowbite/**/*.js',
+
+    './node_modules/tw-elements/dist/js/**/*.js',
   ],
   mode: 'jit',
   theme: {
@@ -16,5 +17,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('tw-elements/dist/plugin.cjs')],
 };
