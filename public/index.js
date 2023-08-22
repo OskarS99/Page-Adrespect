@@ -1,3 +1,5 @@
+import Masonry from '../node_modules/masonry-layout';
+
 window.onload = () => {
   const elem = document.querySelector('.grid');
 
