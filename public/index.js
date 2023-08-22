@@ -1,6 +1,6 @@
 const elem = document.querySelector('.grid');
 
-const masnr = new Masonry(elem, {
+let masnr = new Masonry(elem, {
   itemSelector: '.grid-item',
   columnWidth: '.grid-sizer',
   gutter: '.gutter-sizer',
