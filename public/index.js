@@ -1,15 +1,11 @@
-import Masonry from '../node_modules/masonry-layout';
+const elem = document.querySelector('.grid');
 
-window.onload = () => {
-  const elem = document.querySelector('.grid');
-
-  const masnr = new Masonry(elem, {
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    gutter: '.gutter-sizer',
-    percentPosition: true,
-  });
-};
+const masnr = new Masonry(elem, {
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  gutter: '.gutter-sizer',
+  percentPosition: true,
+});
 
 //Searchbar
 
