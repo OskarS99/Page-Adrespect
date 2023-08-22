@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer type="module" src="./index.js"></script>
+  <link rel="stylesheet" href="./public/styles.css" />
+  <script defer type="module" src="./public/index.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
   <script src="../node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
@@ -22,7 +22,7 @@
           <div>
             <button id="button">
               Oferta
-              <img src="./images/slideIcon.svg" alt="slideIcon" class="inline" />
+              <img src="./public/images/slideIcon.svg" alt="slideIcon" class="inline" />
             </button>
             <ul id="list" class=" bg-white hidden absolute rounded-md z-10 mt-2 p-2">
               <li class="py-1 border-b border-gray-800 ">
@@ -46,7 +46,7 @@
         <li class="absolute top-4 right-4 lg:static">
           <input type="text" placeholder="Wyszukaj"
             class="p-1 invisible border rounded-md  transition-all w-0 duration-150 ease-linear" id="searchBar" />
-          <img src="./images/search.svg" alt="search" class="inline cursor-pointer ml-2" id="search" />
+          <img src="./public/images/search.svg" alt="search" class="inline cursor-pointer ml-2" id="search" />
         </li>
       </ul>
     </div>
@@ -72,7 +72,7 @@
                   realizacje</a>
               </div>
             </div>
-            <img src="./images/garden1.png" alt="garden1" class=" w-full lg:w-[45%] lg:h-[100%]" />
+            <img src="./public/images/garden1.png" alt="garden1" class=" w-full lg:w-[45%] lg:h-[100%]" />
           </div>
         </div>
         <div
@@ -92,7 +92,7 @@
                   realizacje</a>
               </div>
             </div>
-            <img src="./images/garden3.jpg" alt="garden3" class="w-full lg:w-[45%]" />
+            <img src="./public/images/garden3.jpg" alt="garden3" class="w-full lg:w-[45%]" />
           </div>
         </div>
         <div
@@ -111,18 +111,18 @@
                 <a class="button ml-6 text-green-900 border border-green-900">Zobacz nasze realizacje</a>
               </div>
             </div>
-            <img src="./images/garden2.jpg" alt="garden2" class=" w-full lg:w-[45%]" />
+            <img src="./public/images/garden2.jpg" alt="garden2" class=" w-full lg:w-[45%]" />
           </div>
         </div>
       </div>
       <div class=" absolute right-0 bottom-0 flex z-20 ">
         <button type="button" class="px-6 py-6 bg-[#F5F0EC]" data-te-target="#carouselExampleCaptions"
           data-te-slide="next">
-          <img src="./images/arrowLeft.svg" alt="arrow" />
+          <img src="./public/images/arrowLeft.svg" alt="arrow" />
         </button>
         <button type="button" class="px-6 py-6 bg-[#F5F0EC]" data-te-target="#carouselExampleCaptions"
           data-te-slide="prev">
-          <img src="./images/arrowRight.svg" alt="arrow" />
+          <img src="./public/images/arrowRight.svg" alt="arrow" />
         </button>
       </div>
     </div>
@@ -140,7 +140,7 @@
     </div>
     <div class=" text-black  flex flex-col gap-8 items-center py-8 lg:flex-row lg:justify-evenly lg:gap-4 lg:py-20">
       <div class="h-[350px] w-[350px] p-11 rounded-3xl bg-white transform transition duration-150 hover:shadow-2xl ">
-        <img src="./images/pencil.svg" alt="pencil" />
+        <img src="./public/images/pencil.svg" alt="pencil" />
         <h2 class="mt-6 text-3xl">Projekty</h2>
         <p class="mt-3 text-sm ">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem
           istniejącej
@@ -156,7 +156,7 @@
         </a>
       </div>
       <div class="h-[350px] w-[350px] p-11 rounded-3xl bg-white  hover:shadow-2xl">
-        <img src="./images/eye.svg" alt="eye" />
+        <img src="./public/images/eye.svg" alt="eye" />
         <h2 class="mt-6 text-3xl">Wizualizacje</h2>
         <p class="mt-3 text-sm">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w
           technologii 3D.</p>
@@ -170,7 +170,7 @@
         </a>
       </div>
       <div class="h-[350px] w-[350px] p-11 rounded-3xl bg-white    hover:shadow-2xl">
-        <img src="./images/sparks.svg" alt="sparks" />
+        <img src="./public/images/sparks.svg" alt="sparks" />
         <h2 class="mt-6 text-3xl">Realizacje</h2>
         <p class="mt-3 text-sm">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych
           technologii.</p>
@@ -186,8 +186,8 @@
     </div>
   </section>
 
-  <section class="bg-[#1B5B31]" id="o firmie">
-    <div class="flex flex-col gap-8 lg:flex-row-reverse lg:justify-between lg:items-center ">
+  <section id="o firmie">
+    <div class="bg-[#1B5B31] flex flex-col gap-8 lg:flex-row-reverse lg:justify-between lg:items-center ">
       <div class=" mx-auto mt-6 ">
         <span class="text-white text-xs">O firmie</span>
         <h1 class=" text-white text-5xl mt-6">Tworzymy</br> z pasją</h1>
@@ -207,7 +207,7 @@
           </svg>
         </a>
       </div>
-      <img src="./images/aboutFirm.png" alt="aboutFirm" class="lg:w-[45%] " />
+      <img src="./public/images/aboutFirm.png" alt="aboutFirm" class="lg:w-[45%] " />
     </div>
   </section>
 
@@ -223,40 +223,40 @@
       <div class="grid mt-20 relative">
         <div class="grid-sizer w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]"></div>
         <div class="gutter-sizer w-0 sm:w-[10%] lg:w-[5%] xl:w-[8%]"></div>
-        <img src="./images/projects/Photo1.png" alt="image1"
+        <img src="./public/images/projects/Photo1.png" alt="photo1"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1] cursor-pointer" />
-        <img src="./images/projects/Photo2.png" alt="image2"
+        <img src="./public/images/projects/Photo2.png" alt="photo2"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]" />
-        <img src="./images/projects/Photo3.png" alt="image3"
+        <img src="./public/images/projects/Photo3.png" alt="photo3"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]" />
-        <img src="./images/projects/Photo4.png" alt="image4"
+        <img src="./public/images/projects/Photo4.png" alt="photo4"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
-        <img src="./images/projects/Photo5.png" alt="image5"
+        <img src="./public/images/projects/Photo5.png" alt="photo5"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
-        <img src="./images/projects/Photo6.png" alt="image6"
+        <img src="./public/images/projects/Photo6.png" alt="photo6"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
-        <img src="./images/projects/Photo7.png" alt="image7"
+        <img src="./public/images/projects/Photo7.png" alt="photo7"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
-        <img src="./images/projects/Photo8.png" alt="image8"
+        <img src="./public/images/projects/Photo8.png" alt="photo8"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  transition transform duration-200 ease-linear hover:scale-[1.1]" />
-        <img src="./images/projects/Photo9.png" alt="image9"
+        <img src="./public/images/projects/Photo9.png" alt="photo9"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] transition transform duration-200 ease-linear hover:scale-[1.1]" />
-        <img src="./images/projects/photo10.png" alt="image1"
+        <img src="./public/images/projects/photo10.png" alt="photo10"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 transition transform duration-200 ease-linear hover:scale-[1.1] " />
-        <img src="./images/projects/photo11.png" alt="image2"
+        <img src="./public/images/projects/photo11.png" alt="photo11"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 transition transform duration-200 ease-linear hover:scale-[1.1]" />
-        <img src="./images/projects/photo12.png" alt="image3"
+        <img src="./public/images/projects/photo12.png" alt="photo12"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 transition transform duration-200 ease-linear hover:scale-[1.1]" />
-        <img src="./images/projects/photo13.png" alt="image4"
+        <img src="./public/images/projects/photo13.png" alt="photo13"
           class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 transition transform duration-200 ease-linear hover:scale-[1.1]" />
         <div class="popup-image hidden fixed bg-black bg-opacity-75 top-0 left-0 h-full w-full z-[100] ">
-          <img src="./images/projects/Photo1.png" alt="image1"
+          <img src="./public/images/projects/Photo1.png" alt="photo1"
             class="absolute left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[-50%] scale-[1.4]" />
         </div>
         <div class="gradient absolute bottom-0  w-full h-[1300px]  bg-gradient-to-t from-[#DCC1AB]"></div>
         <button id="load-more"
           class="button absolute border block border-black bottom-20 left-1/2 sm:translate-x-[-50%]  z-10 transition transform duration-200 ease-linear hover:scale-[1.2]"><span
-            class="button-text">Rozwiń</span><img src="./images/arrowDown.svg" alt="arrow" class="inline ml-1" />
+            class="button-text">Rozwiń</span><img src="./public/images/arrowDown.svg" alt="arrow" class="inline ml-1" />
         </button>
       </div>
     </div>
@@ -301,7 +301,7 @@
         <p class="text-white">Prawa zastrzeżone © 2022</p>
         <div class="flex gap-4">
           <p class="text-white">made by</p>
-          <img src="./images/logo_adRespect.svg" alt="adRespect" />
+          <img src="./public/images/logo_adRespect.svg" alt="adRespect" />
         </div>
       </div>
     </div>
