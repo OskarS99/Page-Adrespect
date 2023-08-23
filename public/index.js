@@ -55,7 +55,7 @@ const morePhotos = document.querySelector('.more-photos');
 loadMore.addEventListener('click', () => {
   let img = [...document.querySelectorAll('.grid-item')];
   for (let i = 9; i <= imgs - 1; i++) {
-    img[i].classList.toggle('opacity-0');
+    img[i].classList.toggle('invisible');
   }
   buttonText.innerHTML = gradient.classList.contains('opacity-0')
     ? 'Rozwiń'
