@@ -57,8 +57,8 @@ loadMore.addEventListener('click', () => {
   for (let i = 9; i <= imgs - 1; i++) {
     img[i].classList.toggle('invisible');
   }
-  buttonText.innerHTML = gradient.classList.contains('opacity-0')
+  buttonText.innerHTML = gradient.classList.contains('invisible')
     ? 'Rozwiń'
     : 'Zwiń';
-  gradient.classList.toggle('opacity-0');
+  gradient.classList.toggle('invisible');
 });
