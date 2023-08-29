@@ -6,17 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="./public/styles.css" />
+
   <script defer type="module" src="./public/index.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 </head>
 
-<body>
+<body class="font-['Inter']">
   <nav>
-    <div class="flex flex-col gap-8 px-2 py-4 items-center lg:flex-row lg:justify-between lg:py-4 lg:px-16 ">
+    <div class="flex flex-col gap-8 px-2 py-4 items-center lg:flex-row lg:justify-between lg:py-[24px] lg:px-[89px] ">
       <h1 class="text-black self-start sm:self-center"><span class="font-bold">giard</span>design</h1>
-      <ul class="text-black flex gap-8 lg:gap-12">
+      <ul class=" text-black  flex gap-8 lg:text-sm lg:gap-[46px] items-center">
         <li>
           <div>
             <button id="button">
@@ -28,7 +29,7 @@
                 <a href="">Złóż oferte</a>
               </li>
               <li class="py-1 border-b border-gray-800">
-                <a href="">Rodzaje aranżacji</a>
+                <a href="" class="">Rodzaje aranżacji</a>
               </li>
             </ul>
           </div>
@@ -42,7 +43,7 @@
         <li>
           <a href="#kontakt">Kontakt</a>
         </li>
-        <li class="absolute top-4 right-4 sm:static">
+        <li class="absolute top-4 right-4 sm:static ">
           <input type="text" placeholder="Wyszukaj"
             class="p-1 invisible border rounded-md  transition-all w-0 duration-150 ease-linear" id="searchBar" />
           <img src="./public/images/search.svg" alt="search" class="inline cursor-pointer ml-2" id="search" />
@@ -54,24 +55,27 @@
   <section id="intro">
     <div id="carouselExampleCaptions" class="relative" data-te-carousel-init data-te-ride="carousel">
       <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+
         <div
           class="relative float-left -mr-[100%] w-full transition-transform duration-[1000ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
           <div
-            class="bg-[#DCC1AB] text-black flex flex-col gap-10 lg:items-center lg:flex-row lg:justify-between lg:gap-0">
-            <div class="mt-9 mx-auto">
-              <h1 class="text-5xl lg:text-6xl xl:text-7xl">Nowoczesna</br>aranżacja</br>Twojego ogrodu</h1>
-              <p class="mt-12 text-sm lg:text-base">
+            class="bg-[#DCC1AB] text-black flex flex-col text-center gap-10 lg:items-center lg:text-left lg:flex-row lg:justify-between lg:gap-0">
+            <div class="mt-9 lg:ml-[89px]">
+              <h1 class="font-['Montserrat'] font-medium text-4xl sm:text-5xl lg:text-6xl xl:text-7xl">
+                Nowoczesna</br>aranżacja</br>Twojego
+                ogrodu</h1>
+              <p class="mt-11 text-xs sm:text-sm lg:text-base">
                 Marka GiardDesign to wieloletnie doświadczenie i wysoka</br> estetyka
                 realizacji. Oferujemy kompleksowy zakres usług</br> z indywidualnym
                 podejściem do każdego projektu.
               </p>
-              <div class="mt-16">
+              <div class="mt-[72px] ">
                 <a href="#kontakt"
-                  class="button bg-green-900 text-[#F5F0EC] transition transform duration-200 ease-linear hover:scale-[1.1]">Skontaktuj
+                  class="button font-inter text-xs sm:text-sm lg:text-base bg-green-900 text-[#F5F0EC] transition transform duration-200 ease-linear hover:scale-[1.1]">Skontaktuj
                   się z nami</a>
                 <a href="#realizacje"
-                  class="button ml-6 text-green-900 border border-green-900 transition transform duration-200 ease-linear hover:scale-[1.1]">
+                  class="button  font-inter text-xs sm:text-sm lg:text-base ml-6 text-green-900 border border-[#1B5B31] transition transform duration-200 ease-linear hover:scale-[1.1]">
                   Zobacz nasze realizacje
                   <svg class="fill-green-900 inline ml-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -84,23 +88,30 @@
             <img src="./public/images/garden1.png" alt="garden1" class=" w-full lg:w-[45%] lg:h-[100%]" />
           </div>
         </div>
+
+
+
         <div
           class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item style="backface-visibility: hidden">
           <div
-            class=" bg-[#DCC1AB] text-black flex flex-col gap-10 items-center lg:flex-row lg:justify-between  lg:gap-0">
+            class=" bg-[#DCC1AB] text-black flex flex-col text-center gap-10 items-center lg:flex-row lg:text-left lg:justify-between  lg:gap-0">
             <div class="mt-9 mx-auto ">
-              <h1 class="text-5xl lg:text-6xl xl:text-7xl">Nowoczesna</br>aranżacja</br>Twojego ogrodu</h1>
-              <p class="mt-12 text-sm lg:text-base">
+              <h1 class="font-['Montserrat'] font-medium text-4xl sm:text-5xl lg:text-6xl xl:text-7xl">
+                Nowoczesna</br>aranżacja</br>Twojego ogrodu</h1>
+              <p class="mt-11 text-xs sm:text-sm lg:text-base">
                 Marka GiardDesign to wieloletnie doświadczenie i wysoka</br> estetyka
                 realizacji. Oferujemy kompleksowy zakres usług</br> z indywidualnym
                 podejściem do każdego projektu.
               </p>
-              <div class="mt-16">
-                <a href="#kontakt" class="button bg-green-900 text-[#F5F0EC]">Skontaktuj się z nami</a>
-                <a href="#realizacje" class="button ml-6 text-green-900 border border-green-900">
+              <div class="mt-[72px]">
+                <a href="#kontakt" class="button text-xs sm:text-sm lg:text-base bg-[#1B5B31] text-[#F5F0EC]">Skontaktuj
+                  się z
+                  nami</a>
+                <a href="#realizacje"
+                  class="button text-xs sm:text-sm lg:text-base ml-6 text-[#1B5B31] border border-[#1B5B31]">
                   Zobacz naszerealizacje
-                  <svg class="fill-green-900 inline ml-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                  <svg class="fill-[#1B5B31] inline ml-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z" />
@@ -111,23 +122,28 @@
             <img src="./public/images/garden3.jpg" alt="garden3" class="w-full lg:w-[45%]" />
           </div>
         </div>
+
         <div
           class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item style="backface-visibility: hidden">
           <div
-            class=" bg-[#DCC1AB] text-black flex flex-col gap-10 items-center lg:flex-row lg:justify-between lg:gap-0">
+            class=" bg-[#DCC1AB] text-black text-center flex flex-col gap-10 items-center lg:flex-row lg:text-left lg:justify-between lg:gap-0">
             <div class="mt-9 mx-auto ">
-              <h1 class="text-5xl lg:text-6xl xl:text-7xl">Nowoczesna</br>aranżacja</br>Twojego ogrodu</h1>
-              <p class="mt-12 text-sm lg:text-base">
+              <h1 class="font-['Montserrat'] font-medium text-4xl sm:text-5xl lg:text-6xl xl:text-7xl">
+                Nowoczesna</br>aranżacja</br>Twojego ogrodu</h1>
+              <p class="mt-11 text-xs sm:text-sm lg:text-base">
                 Marka GiardDesign to wieloletnie doświadczenie i wysoka</br> estetyka
                 realizacji. Oferujemy kompleksowy zakres usług</br> z indywidualnym
                 podejściem do każdego projektu.
               </p>
-              <div class="mt-16">
-                <a href="#kontakt" class="button bg-green-900 text-[#F5F0EC]">Skontaktuj się z nami</a>
-                <a href="#realizacje" class="button ml-6 text-green-900 border border-green-900">
+              <div class="mt-[72px]">
+                <a href="#kontakt" class="button text-xs sm:text-sm lg:text-base bg-green-900 text-[#F5F0EC]">Skontaktuj
+                  się z
+                  nami</a>
+                <a href="#realizacje"
+                  class="button text-xs sm:text-sm lg:text-base ml-6 text-green-900 border border-green-900">
                   Zobacz nasze realizacje
-                  <svg class="fill-green-900 inline ml-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                  <svg class="fill-[#1B5B31] inline ml-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z" />
@@ -152,39 +168,42 @@
   </section>
 
   <section class="bg-[#F5F0EC]" id="oferta">
-    <div class="pt-16 text-black pl-8 md:text-center lg:text-left lg:pt-32 lg:px-40 ">
-      <span class="text-green-900 text-xs ">Oferta</span>
-      <h1 class="text-4xl mt-6 tracking lg:text-5xl">Działamy kompleksowo</h1>
-      <p class="text-sm mt-10">
+    <div class="pt-16 text-black px-8 md:text-center lg:text-left lg:pt-[120px] lg:px-[200px] ">
+      <span class="text-[#1B5B31] text-xs ">Oferta</span>
+      <h1 class="font-['Montserrat'] font-medium text-4xl mt-6 tracking sm:text-5xl">Działamy <span
+          class="font-['Inter'] font-medium italic">kompleksowo</span></h1>
+      <p class="text-xs sm:text-sm text-left lg:text-base mt-10">
         Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody</br>
         przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy</br>
         w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
       </p>
     </div>
-    <div class=" text-black  flex flex-col gap-8 items-center py-8 lg:flex-row lg:justify-evenly lg:gap-4 lg:py-20">
-      <div class="h-[350px] w-[350px] p-11 rounded-3xl bg-white transform transition duration-150 hover:shadow-2xl ">
+    <div
+      class=" text-black  flex flex-col gap-8 items-center px-2 py-8 lg:flex-row lg:justify-between lg:px-[89px] lg:gap-4 lg:pt-24 lg:pb-40">
+      <div
+        class="max-h-[370px] max-w-[378px] px-10 py-12 rounded-3xl bg-white transform transition duration-150 hover:shadow-2xl ">
         <img src="./public/images/pencil.svg" alt="pencil" />
-        <h2 class="mt-6 text-3xl">Projekty</h2>
+        <h2 class="font-['Montserrat'] font-medium mt-8 text-[28px]">Projekty</h2>
         <p class="mt-3 text-sm ">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem
           istniejącej
           przestrzeni.</p>
         <a href=""
-          class="inline-block text-green-900  border-b border-green-900 pb-1 mt-14  object-contain  hover:text-lg hover:font-bold">Dowiedz
+          class="inline-block text-green-900  border-b border-green-900 pb-1 mt-16  object-contain  hover:text-lg hover:font-bold">Dowiedz
           się wiecej
-          <svg class="fill-green-800 inline ml-1" width="16" height="16" viewBox="0 0 16 16" fill="none"
+          <svg class="fill-[#1B5B31] inline ml-1" width="16" height="16" viewBox="0 0 16 16" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" />
           </svg>
         </a>
       </div>
-      <div class="h-[350px] w-[350px] p-11 rounded-3xl bg-white  hover:shadow-2xl">
+      <div class="max-h-[370px] max-w-[378px] px-10 py-12 rounded-3xl bg-white  hover:shadow-2xl">
         <img src="./public/images/eye.svg" alt="eye" />
-        <h2 class="mt-6 text-3xl">Wizualizacje</h2>
+        <h2 class="font-['Montserrat'] font-medium mt-8 text-[28px]">Wizualizacje</h2>
         <p class="mt-3 text-sm">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w
           technologii 3D.</p>
         <a href=""
-          class="inline-block text-green-900  border-b border-green-900 pb-1 mt-14  object-contain  hover:text-lg  hover:font-bold">Dowiedz
+          class="inline-block text-green-900  border-b border-green-900 pb-1 mt-16  object-contain  hover:text-lg  hover:font-bold">Dowiedz
           się wiecej <svg class="fill-green-800 inline ml-1" width="16" height="16" viewBox="0 0 16 16" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -192,13 +211,13 @@
           </svg>
         </a>
       </div>
-      <div class="h-[350px] w-[350px] p-11 rounded-3xl bg-white    hover:shadow-2xl">
+      <div class="max-h-[370px] max-w-[378px] px-10 py-12 rounded-3xl bg-white    hover:shadow-2xl">
         <img src="./public/images/sparks.svg" alt="sparks" />
-        <h2 class="mt-6 text-3xl">Realizacje</h2>
+        <h2 class="font-['Montserrat'] font-medium mt-8 text-[28px]">Realizacje</h2>
         <p class="mt-3 text-sm">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych
           technologii.</p>
         <a href=""
-          class="inline-block text-green-900  border-b border-green-900 pb-1 mt-14  object-contain hover:text-lg  hover:font-bold">Zobacz
+          class="inline-block text-green-900  border-b border-green-900 pb-1 mt-16  object-contain hover:text-lg  hover:font-bold">Zobacz
           nasze realizacje <svg class="fill-green-800 inline ml-1" width="16" height="16" viewBox="0 0 16 16"
             fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -210,11 +229,13 @@
   </section>
 
   <section id="o firmie">
-    <div class="bg-[#1B5B31] flex flex-col gap-8 lg:flex-row-reverse lg:justify-between lg:items-center ">
-      <div class="mx-auto mt-6 ">
-        <span class="text-white text-xs lg:text-sm">O firmie</span>
-        <h1 class=" text-white text-5xl mt-6 lg:text-6xl xl:text-7xl">Tworzymy</br> z pasją</h1>
-        <p class="text-sm text-white mt-10 lg:text-base">
+    <div class="bg-[#1B5B31] flex flex-col gap-8 lg:flex-row-reverse lg:justify-between lg:items-center">
+      <div class="mt-6 mx-8 lg:mx-auto ">
+        <span class="text-white text-xs ">O firmie</span>
+        <h1 class="font-['Montserrat'] font-medium text-white text-4xl sm:text-5xl mt-4 xl:text-6xl">Tworzymy</br> z
+          <span class="font-['Inter'] font-medium italic">pasją</span>
+        </h1>
+        <p class="text-xs sm:text-sm text-white mt-10 lg:text-base">
           Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą</br>
           wykwalifikowani projektanci oraz architekci, których zadaniem jest</br>
           rozpoznanie i realizacja potrzeb każdego Klienta. Nasza </br>
@@ -223,7 +244,7 @@
           małoobsługowe, dostosowane do współczesnego trybu życia.
         </p>
         <a href=""
-          class="button inline-block text-white border border-white mt-16 transition transform duration-200 ease-linear hover:scale-[1.1]">
+          class="button inline-block text-white border border-white mt-[72px] transition transform duration-200 ease-linear hover:scale-[1.1]">
           Poznaj nas bliżej
           <svg class="fill-white inline ml-1" width="16" height="16" viewBox="0 0 16 16" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -232,48 +253,49 @@
           </svg>
         </a>
       </div>
-      <img src="./public/images/aboutFirm.png" alt="aboutFirm" class="lg:w-[45%] " />
+      <img src="./public/images/aboutFirm.png" alt="aboutFirm" />
     </div>
   </section>
 
   <section id="realizacje">
     <div class="bg-[#DCC1AB] text-black">
-      <div class=" pt-20 px-32">
-        <span class="text-green-900 text-xs">
+      <div class="pt-[60px] mx-8 lg:pt-[120px] lg:px-40">
+        <span class="text-[#1B5B31] text-xs">
           Realizacje
         </span>
-        <h1 class="text-5xl mt-5">Nasze projekty</h1>
+        <h1 class="font-['Montserrat'] font-medium text-4xl sm:text-5xl mt-4">Nasze <span
+            class="font-['Inter'] font-medium italic">projekty</span></h1>
       </div>
 
-      <div class="grid mt-20 relative">
-        <div class="grid-sizer w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]"></div>
-        <div class="gutter-sizer w-0 sm:w-[10%] lg:w-[5%] xl:w-[8%]"></div>
+      <div class="grid  mt-16 lg:mt-24 relative">
+        <div class="grid-sizer w-[100%] sm:w-[45%] lg:w-[30%]"></div>
+        <div class="gutter-sizer w-0 sm:w-[10%] lg:w-[5%]"></div>
         <img src="./public/images/projects/Photo1.png" alt="photo1"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] image-transform ease-linear duration-200 hover:scale-[1.1]" />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%]  image-transform ease-linear duration-200 hover:scale-[1.1]" />
         <img src="./public/images/projects/Photo2.png" alt="photo2"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] image-transform duration-200 ease-linear hover:scale-[1.1]" />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%]  image-transform duration-200 ease-linear hover:scale-[1.1]" />
         <img src="./public/images/projects/Photo3.png" alt="photo3"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] image-transform duration-200 ease-linear hover:scale-[1.1]" />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] image-transform duration-200 ease-linear hover:scale-[1.1]" />
         <img src="./public/images/projects/Photo4.png" alt="photo4"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] image-transform duration-200 ease-linear hover:scale-[1.1]" />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] image-transform duration-200 ease-linear hover:scale-[1.1]" />
         <img src="./public/images/projects/Photo5.png" alt="photo5"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  image-transform duration-200 ease-linear hover:scale-[1.1]" />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%]  image-transform duration-200 ease-linear hover:scale-[1.1]" />
         <img src="./public/images/projects/Photo6.png" alt="photo6"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  image-transform duration-200 ease-linear hover:scale-[1.1]" />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%]  image-transform duration-200 ease-linear hover:scale-[1.1]" />
         <img src="./public/images/projects/Photo7.png" alt="photo7"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  image-transform duration-200 ease-linear hover:scale-[1.1]" />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%]   image-transform duration-200 ease-linear hover:scale-[1.1]" />
         <img src="./public/images/projects/Photo8.png" alt="photo8"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%]  image-transform duration-200 ease-linear hover:scale-[1.1]" />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%]   image-transform duration-200 ease-linear hover:scale-[1.1]" />
         <img src="./public/images/projects/Photo9.png" alt="photo9"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] image-transform duration-200 ease-linear hover:scale-[1.1]" />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%]  image-transform duration-200 ease-linear hover:scale-[1.1]" />
         <img src="./public/images/projects/photo10.png" alt="photo10"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 image-transform duration-200 ease-linear hover:scale-[1.1] " />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%]  opacity-0 image-transform duration-200 ease-linear hover:scale-[1.1] " />
         <img src="./public/images/projects/photo11.png" alt="photo11"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 image-transform duration-200 ease-linear hover:scale-[1.1]" />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] opacity-0 image-transform duration-200 ease-linear hover:scale-[1.1]" />
         <img src="./public/images/projects/photo12.png" alt="photo12"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0 image-transform duration-200 ease-linear hover:scale-[1.1]" />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%]  opacity-0 image-transform duration-200 ease-linear hover:scale-[1.1]" />
         <img src="./public/images/projects/photo13.png" alt="photo13"
-          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%] xl:w-[19%] opacity-0  image-transform duration-200 ease-linear hover:scale-[1.1]" />
+          class="grid-item mb-10 w-[100%] sm:w-[45%] lg:w-[30%]  opacity-0  image-transform duration-200 ease-linear hover:scale-[1.1]" />
         <div class="popup-image hidden fixed bg-black bg-opacity-75 top-0 left-0 h-full w-full z-[100] ">
           <img src="./public/images/projects/Photo1.png" alt="photo1"
             class="absolute max-h-[60%] left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[-50%] scale-[1.4]" />
@@ -282,7 +304,7 @@
           class="gradient absolute bottom-0  w-full h-[1300px]  bg-gradient-to-t from-[#DCC1AB] transition-all duration-200 ease-linear">
         </div>
         <button id="load-more"
-          class="button absolute border block border-black bottom-20 left-1/2 translate-x-[-50%]  z-10 transition transform duration-200 ease-linear hover:scale-[1.2]"><span
+          class="button absolute border block  border-black bottom-20 left-1/2 translate-x-[-50%]  z-10 transition transform duration-200 ease-linear hover:scale-[1.2]"><span
             class="button-text">Rozwiń</span><img src="./public/images/arrowDown.svg" alt="arrow" class="inline ml-1" />
         </button>
       </div>
@@ -292,42 +314,46 @@
 
   <footer id="kontakt">
     <div
-      class="bg-green-900 my-10 mx-20  flex flex-col gap-14 lg:mx-30 lg:my-12 lg:flex-row lg:justify-evenly lg:items-center lg:min-h-[350px] lg:px-12 lg:py-16 xl:mx-40 xl:my-14">
-      <h1 class="text-4xl text-white mt-5 text-center lg:text-start">
+      class="bg-green-900 my-8 mx-14  flex flex-col gap-12 lg:mx-[200px] lg:my-[60px] lg:flex-row lg:gap-16 lg:justify-between  lg:px-[110px] lg:py-[120px] xl:mx-40 xl:my-14">
+      <h1 class="font-['Montserrat']  text-4xl sm:text-[40px] text-white mt-5 text-center leading-normal lg:text-start">
         Zostańmy w kontacie!</br>
-        Znajdziesz nas na Instagramie.
+        Znajdziesz nas na <span class="font-['Inter'] font-medium italic">Instagramie</span>.
       </h1>
-      <div class="flex justify-around  mb-5 lg:flex-col lg:gap-5 ">
-        <p class="text-sm text-white">Śledź nasze</br> najnowsze realizacje!</p>
+      <div class="flex justify-around mb-5 lg:flex-col lg:gap-5 ">
+        <p class=" text-white text-sm lg:text-base">Śledź nasze</br> najnowsze realizacje!</p>
         <a href=""
-          class="button  bg-white text-green-900 transition transform duration-200 ease-linear hover:scale-[1.1]">Instagram</a>
+          class="button  bg-white text-green-900 text-xs sm:text-sm transition transform duration-200 ease-linear hover:scale-[1.1]">Instagram</a>
       </div>
     </div>
-    <div class="bg-black lg:px-40 lg:py-16 py-10 px-20 flex flex-col gap-14">
+
+
+    <div class="bg-black  py-8 px-12 flex flex-col gap-[30px] lg:gap-[62px] lg:px-[200px] lg:py-20">
+
       <div class="flex flex-col gap-6 lg:flex-row lg:justify-between lg:items-center">
         <h1 class="text-white"><span class="font-bold">giard</span>design</h1>
-        <div class="flex justify-between items-center ">
-          <p class="text-sm  text-white ">Daj znać, co mozemy dla Ciebie zrobić!</p>
+        <div class="flex flex-col gap-4 items-start sm:flex-row sm:items-center sm:justify-between ">
+          <p class=" text-white text-sm">Daj znać, co mozemy dla Ciebie zrobić!</p>
           <a href=""
-            class="button  bg-green-900 text-white ml-5 transition transform duration-200 ease-linear hover:scale-[1.1]">Skontaktuj
+            class="button  bg-[#1B5B31] text-white lg:ml-6 transition transform duration-200 ease-linear hover:scale-[1.1] text-xs sm:text-sm lg:text-sm">Skontaktuj
             się z nami</a>
         </div>
       </div>
+
       <div class="bg-white h-[1px] opacity-50"></div>
       <div class="flex flex-col gap-10 lg:flex-row lg:justify-between">
-        <div class="flex gap-5 justify-between lg:gap-10">
-          <p class="text-white text-sm">Kontakt</p>
-          <p class="text-white text-sm">Instagram</p>
-          <p class="text-white text-sm">Facebook</p>
-          <p class="text-white text-sm">LinkedIn</p>
+        <div class="flex gap-5 justify-between text-xs lg:text-sm lg:gap-10">
+          <p class="text-white ">Kontakt</p>
+          <p class="text-white ">Instagram</p>
+          <p class="text-white ">Facebook</p>
+          <p class="text-white ">LinkedIn</p>
         </div>
-        <div class="flex gap-10 justify-center">
-          <p class="text-white text-sm">000-000-000</p>
-          <p class="text-white text-sm">giarddesign@kontakt.pl</p>
+        <div class="flex gap-10 justify-between text-xs lg:text-sm">
+          <p class="text-white">000-000-000</p>
+          <p class="text-white">giarddesign@kontakt.pl</p>
         </div>
       </div>
 
-      <div class="flex justify-between mt-0 lg:mt-14">
+      <div class="flex justify-between mt-0 text-xs lg:text-base lg:mt-[120px]">
         <p class="text-white">Prawa zastrzeżone © 2022</p>
         <div class="flex gap-4">
           <p class="text-white">made by</p>
