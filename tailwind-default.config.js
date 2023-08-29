@@ -340,6 +340,8 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      inter: ['"Inter"', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif'],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

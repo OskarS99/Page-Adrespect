@@ -11,9 +11,10 @@ module.exports = {
       colors: {
         beige: '#DCC1AB',
       },
-      fontFamily: {
-        body: [''],
-      },
+    },
+    fontFamily: {
+      inter: ['"Inter"', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif'],
     },
   },
   plugins: [require('tw-elements/dist/plugin.cjs')],
