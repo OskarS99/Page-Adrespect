@@ -2,19 +2,16 @@
 ![Page](public/images/website.gif)
 
 ## Demo
-https://oskars99.github.io/Personal-Homepage/
+[https://oskars99.github.io/Personal-Homepage/](https://oskars99.github.io/Page-Adrespect/)
 
 ## Descritpion
-A project in which I present myself. There are my data, skills and future plans. The project was created using the React library.
+A website tab design that contains several sections. Visualization and pattern created based on a figma graphic project
 
 ## Used Technology
 ### HTML
 ### CSS
+### CSS Framework
+   - TailwindCSS
 ### JavaScript
-### JS Library
-   - React.js
-   - Redux
-## Available Scripts
-In the project directory, you can run:
 
-### `npm start`
+
